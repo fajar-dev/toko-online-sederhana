@@ -1,0 +1,138 @@
+html {
+	scroll-behavior: smooth;
+}
+pre {
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    font-family: inherit;
+}
+.bg-custom {
+	background-color: #000033;
+} 
+h2 {
+	font-family: 'Catamaran', sans-serif;
+	color: #010232;
+}
+h4 {
+	font-family: 'Catamaran', sans-serif;
+	color: #010232;
+}
+h6 {
+	font-family: 'Catamaran', sans-serif;
+	color: #010232;
+}
+p {
+	font-family: 'Raleway', sans-serif;
+}
+.card {
+	box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+hr {
+	width: 50px;
+	height: 2px;
+	background-color: #374ec8;
+	margin-bottom: 30px;
+}
+.btn-custom {
+	border-radius: 50px;
+}
+.modal-content {
+	border-radius: 20px;
+}
+
+.modal button {
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 6px 40px 6px 40px;
+	border-radius: 50px;
+}
+/*--------navbar----------*/
+.nav-link {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+.navbar-brand {
+	font-family: 'viga', sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+}
+/*------section 1--------*/
+.awal {
+	margin-top: 100px;
+}
+.awal .card {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.about {
+	text-align: center;
+}
+.about img {
+	border-radius: 100%;
+	width: 50%;
+}
+.quote {
+	margin-top: 100px;
+}
+
+.quote h1 {
+	font-size: 56px;
+	font-weight: 400;
+	font-family: 'Merriweather', serif;
+}
+
+.quote p {
+	color: #909090;
+	font-size: 18px;
+	font-family: 'poppins', sans-serif;
+}
+/*------footer--------*/
+.footer {
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.nav-navbar {
+		background: transparent;
+	}
+	.dark .nav-navbar {
+		background: transparent;
+	}
+
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 30px;
+		font-size: 16px;
+		color: #010232 !important;
+	}
+
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #374ec8;
+		width: 50%;
+		margin: auto;
+		padding-top: 5px;
+		margin-bottom: -8px;
+	}
+	.navbar-brand {
+		color: #010232 !important;
+	}
+	/*------section 1--------*/
+	.card {
+		margin-top: 20px;
+	}
+	.modal-body form {
+		padding: 0px 50px 0px 50px;
+	}
+	.about {
+		text-align: right;
+	}
+	.about img {
+		border-radius: 100%;
+		width: 100%;
+	}
+}
+
