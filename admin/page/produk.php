@@ -201,7 +201,7 @@ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; FAJAR-DEV 2020</span>
+                        <span>Copyright &copy; <a href="https://fajar-dev.my.id">Fajar-Dev</a> 2020</span>
                     </div>
                 </div>
             </footer>
@@ -268,7 +268,7 @@ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
         e.preventDefault();
         const href = $(this).attr('href')
         Swal.fire({
-            title: 'Hapus Project?',
+            title: 'Hapus Produk?',
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
