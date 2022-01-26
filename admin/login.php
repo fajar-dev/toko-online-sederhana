@@ -69,7 +69,7 @@ if(isset($_SESSION['username'])) {
                                     </form>
                                     <hr>
                                     <div class="text-center pt-2">
-                                        <p>Chanofficial &copy; 2020.</p>
+                                        <p><a href="https://fajar-dev.my.id">Fajar-Dev</a> &copy; 2020.</p>
                                     </div>
                                 </div>
                             </div>
