@@ -18,7 +18,7 @@
         if(in_array($ekstensi, $ekstensi_diperbolehkan) === true)  {     
                 move_uploaded_file($file_tmp, '../../../assets/produk/'.$nama_gambar_baru); //memindah file gambar ke folder gambar
                     // jalankan query INSERT untuk menambah data ke database pastikan sesuai urutan (id tidak perlu karena dibikin otomatis)
-                    $query = "INSERT INTO produk (id, gambar, nama, harga, wa) VALUES ('', '$nama_gambar_baru', '$nama', '$harga', '$wa')";
+                    $query = "INSERT INTO produk (gambar, nama, harga, wa) VALUES ('$nama_gambar_baru', '$nama', '$harga', '$wa')";
                     $result = mysqli_query($koneksi, $query);
                     // periska query apakah ada error
                     if(!$result){
@@ -35,7 +35,7 @@
                 echo "<script>window.location='../produk.php?gagal';</script>";
             }
     } else {
-    $query = "INSERT INTO produk (id, gambar, nama, harga, wa) VALUES ('', null, '$nama', '$harga', '$wa')";
+    $query = "INSERT INTO produk (gambar, nama, harga, wa) VALUES (null, '$nama', '$harga', '$wa')";
                     $result = mysqli_query($koneksi, $query);
                     // periska query apakah ada error
                     if(!$result){
